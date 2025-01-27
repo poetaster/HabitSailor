@@ -18,7 +18,6 @@ Version:    0.9
 Release:    1
 Group:      Applications/Internet
 License:    GPLv3
-BuildArch:  noarch
 URL:        https://github.com/poetaster/HabitSailor
 Source0:    %{name}-%{version}.tar.bz2
 Requires:   sailfishsilica-qt5 >= 1.1.0
@@ -85,6 +84,7 @@ desktop-file-install --delete-original       \
 
 %files
 %defattr(-,root,root,-)
+%{_bindir}
 %{_datadir}/%{name}
 %{_datadir}/icons/hicolor/*/apps/%{name}.png
 %{_datadir}/applications/%{name}.desktop
