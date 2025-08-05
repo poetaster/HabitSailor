@@ -15,7 +15,7 @@ Name: harbour-habitsailor
 
 Summary:    Habitica client
 Version:    0.9
-Release:    1
+Release:    2
 Group:      Applications/Internet
 License:    GPLv3
 URL:        https://github.com/poetaster/HabitSailor
