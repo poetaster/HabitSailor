@@ -51,6 +51,7 @@ Service.prototype.call = function (path, method, data, onload, options) {
     if (options.debug) print("XHR Query Data: " + JSON.stringify(data, null, 2));
     xhr.open(method, fullpath);
     if (this.apiKey && this.apiUser) {
+        xhr.setRequestHeader("x-client", this.apiUser+"-habitsailor");
         xhr.setRequestHeader("x-api-key", this.apiKey);
         xhr.setRequestHeader("x-api-user", this.apiUser);
     }
